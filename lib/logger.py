@@ -6,7 +6,9 @@ __author__ = "H.D. 'Chip' McCullough IV"
 
 class Logger:
     """
-    Logging class that implements a simple logger to make life easier.
+    Logging class that implements a simple logger to make life easier. This utilized a "cascading" logger, where the
+    main logger logs everything, but every function that instantiates a logger has their own file, making
+    error/exception finding simpler.
     """
     def __init__(self, name, out, formatting, level=logging.DEBUG):
         """

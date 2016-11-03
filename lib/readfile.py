@@ -1,4 +1,5 @@
 import csv
+import lib.excepterrors as ee
 import lib.logger as lg
 
 __author__ = "H.D. 'Chip' McCullough IV"
@@ -17,4 +18,4 @@ def readFile(fpath):
         log.logger.log("DONE -- Returning dataset")
         return dataset                                                              # Return dataset
     except FileNotFoundError as e:                         # EXCEPTION:
-        log.logger.exception("FileNotFoundError: No such file: {0}".format(fpath))  # param:fpath does not exist
+        ee.excepterrors(e, "No such file: {0}".format(fpath))                       # param:fpath does not exist
