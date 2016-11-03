@@ -27,6 +27,20 @@ def processDescriptions(fpath):
         f = open(fpath, 'r')                                                   # Open param:filepath
         data = csv.reader(f)                                                   # Read f as a CSV file
         dataset = list(data)                                                   # Coherse the CSV data into a list
+        f.close()                                                              # Close f, dataset obtained
+        states = []
+        rewards = []
+        for i in range(0, len(dataset)):
+            try:
+                states.append(int(dataset[i][0]))                              # Coherse state number to an integer
+            except ValueError as e:
+                ee.excepterrors(e, "Could not coherse state enumeration {0} to an integer".format(dataset[i][0]))
+            try:
+                rewards.append(float(dataset[i][3]))                           # Coherse state reward to a float
+            except ValueError as e:
+                ee.excepterrors(e, "Could not coherse state rewards {0} to a float".format(dataset[i][3]))
+
+        return states, rewards                                                 # Return state description/rewards
 
     except FileNotFoundError as e:
         ee.excepterrors(e, "msg")
