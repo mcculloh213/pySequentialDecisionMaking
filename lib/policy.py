@@ -7,6 +7,6 @@ class Policy(Enum):
     """
     Simple policy pseudo-enumeration
     """
-    b = "Black"
-    g = "Grey"
-    s = "Scarlet"
+    B = "Black"
+    G = "Grey"
+    S = "Scarlet"
