@@ -24,12 +24,17 @@ def processDescriptions(fpath):
     :return: [[states]^T, [rewards]^T] s.t. states[0] => rewards[0] , ..., states[n] => rewards[n]
     """
     try:
+        log.logger.info("Opening file {0}".format(fpath))
         f = open(fpath, 'r')                                                   # Open param:filepath
+        log.logger.info("Reading data using CSV module")
         data = csv.reader(f)                                                   # Read f as a CSV file
+        log.logger.info("Cohersing data into a usable format")
         dataset = list(data)                                                   # Coherse the CSV data into a list
+        log.logger.info("Closing file {0}".format(fpath))
         f.close()                                                              # Close f, dataset obtained
         states = []
         rewards = []
+        log.logger.info("Cleaning data")
         for i in range(0, len(dataset)):
             try:
                 states.append(int(dataset[i][0]))                              # Coherse state number to an integer
@@ -39,7 +44,7 @@ def processDescriptions(fpath):
                 rewards.append(float(dataset[i][3]))                           # Coherse state reward to a float
             except ValueError as e:
                 ee.excepterrors(e, "Could not coherse state rewards {0} to a float".format(dataset[i][3]))
-
+        log.logger.info("Done -- Returning state/reward duple")
         return states, rewards                                                 # Return state description/rewards
 
     except FileNotFoundError as e:
