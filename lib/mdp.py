@@ -65,9 +65,11 @@ class MarkovDecisionProcess:
     def transition(self, state, action=None):
         """
         Transition function
-        :param state:
-        :param action:
-        :return:
+        :param state: Representation of a state in the defined problem
+        :type state: object
+        :param action: Policy.
+        :type action: object
+        :return: A list of possible transitions for each action
         """
         plan = []
         if action is None:                                                     # Terminal state

@@ -1,104 +1,106 @@
-2016-11-06 10:04:00,484 - Proj04 - INFO - Processing state descriptions
-2016-11-06 10:04:00,484 - Proj04.preprocess - INFO - Opening file ./data/place_descriptions.txt
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Reading data using CSV module
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Cohersing data into a usable format
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Closing file ./data/place_descriptions.txt
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Cleaning data
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Generating reward dictionary
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Done -- Returning state/reward duple
-2016-11-06 10:04:00,486 - Proj04 - INFO - Processing transitions
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Opening file ./data/rand_transitions.txt
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Reading data using CSV module
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Cohersing data into a usable format
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Passed data is non-deterministic
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Cleaning data
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - DONE -- Returning dataset
-2016-11-06 10:04:00,487 - Proj04 - INFO - Generating actions
-2016-11-06 10:04:00,487 - Proj04 - INFO - Transition data is non-deterministic
-2016-11-06 10:04:00,487 - Proj04 - INFO - Generating transition dictionary, non-deterministic format
-2016-11-06 10:04:00,487 - Proj04.valueIteration - INFO - Running value iteration
-2016-11-06 10:04:00,487 - Proj04.valueIteration - INFO - Value Iteration, loop 1
-2016-11-06 10:04:00,487 - Proj04.valueIteration - INFO - State 1: Utility = -1.0
-2016-11-06 10:04:00,487 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,487 - Proj04.valueIteration - INFO - State 2: Utility = -0.05
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - State 3: Utility = -1.0
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - State 4: Utility = -0.05
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - State 5: Utility = -0.05
-2016-11-06 10:04:00,488 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - State 6: Utility = -0.05
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - State 7: Utility = -0.05
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - State 8: Utility = -0.05
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,489 - Proj04.valueIteration - INFO - State 9: Utility = 1.0
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - State 10: Utility = 1.0
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - delta = 1.0
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - Value Iteration, loop 2
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - State 1: Utility = -1.0
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - State 2: Utility = 0.67
-2016-11-06 10:04:00,490 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,491 - Proj04.valueIteration - INFO - State 3: Utility = -1.0
-2016-11-06 10:04:00,491 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,491 - Proj04.valueIteration - INFO - State 4: Utility = -0.05450000000000001
-2016-11-06 10:04:00,491 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,491 - Proj04.valueIteration - INFO - State 5: Utility = 0.4
-2016-11-06 10:04:00,491 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - State 6: Utility = -0.05450000000000001
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - State 7: Utility = -0.059000000000000004
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - State 8: Utility = 0.58
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - State 9: Utility = 1.0
-2016-11-06 10:04:00,492 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - State 10: Utility = 1.0
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - Value Iteration, loop 3
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - State 1: Utility = -1.0
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - State 2: Utility = 0.67
-2016-11-06 10:04:00,493 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - State 3: Utility = -1.0
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - State 4: Utility = 0.3154
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - State 5: Utility = 0.4
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,494 - Proj04.valueIteration - INFO - State 6: Utility = 0.2380000000000001
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - State 7: Utility = 0.25150000000000006
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - State 8: Utility = 0.58
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - State 9: Utility = 1.0
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,495 - Proj04.valueIteration - INFO - State 10: Utility = 1.0
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - delta = 0.3699
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - Value Iteration, loop 4
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - State 1: Utility = -1.0
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - State 2: Utility = 0.67
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,496 - Proj04.valueIteration - INFO - State 3: Utility = -1.0
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - State 4: Utility = 0.3154
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - State 5: Utility = 0.4
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - State 6: Utility = 0.2380000000000001
-2016-11-06 10:04:00,497 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - State 7: Utility = 0.25150000000000006
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - State 8: Utility = 0.58
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - State 9: Utility = 1.0
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - State 10: Utility = 1.0
-2016-11-06 10:04:00,498 - Proj04.valueIteration - INFO - delta = 0
-2016-11-06 10:04:00,499 - Proj04.valueIteration - INFO - Break condition met at iteration 5. delta = 0
+2016-11-06 12:22:16,559 - Proj04 - INFO - State Description file: ./data/place_descriptions.txt
+2016-11-06 12:22:16,559 - Proj04 - INFO - Transition file: ./data/rand_transitions.txt
+2016-11-06 12:22:16,560 - Proj04 - INFO - Processing state descriptions
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Opening file ./data/place_descriptions.txt
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Reading data using CSV module
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Cohersing data into a usable format
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Closing file ./data/place_descriptions.txt
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Cleaning data
+2016-11-06 12:22:16,561 - Proj04.preprocess - INFO - Generating reward dictionary and terminal states
+2016-11-06 12:22:16,561 - Proj04.preprocess - INFO - Done -- Returning state/reward duple
+2016-11-06 12:22:16,561 - Proj04 - INFO - Processing transitions
+2016-11-06 12:22:16,561 - Proj04.readFile - INFO - Opening file ./data/rand_transitions.txt
+2016-11-06 12:22:16,561 - Proj04.readFile - INFO - Reading data using CSV module
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - Cohersing data into a usable format
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - Passed data is non-deterministic
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - Cleaning data
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - DONE -- Returning dataset
+2016-11-06 12:22:16,562 - Proj04 - INFO - Generating actions
+2016-11-06 12:22:16,562 - Proj04 - INFO - Transition data is non-deterministic
+2016-11-06 12:22:16,563 - Proj04 - INFO - Generating transition dictionary, non-deterministic format
+2016-11-06 12:22:16,563 - Proj04.valueIteration - INFO - Running value iteration
+2016-11-06 12:22:16,563 - Proj04.valueIteration - INFO - Value Iteration, loop 1
+2016-11-06 12:22:16,563 - Proj04.valueIteration - INFO - State 1: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,563 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,563 - Proj04.valueIteration - INFO - State 2: Utility = -0.05 Policy = B
+2016-11-06 12:22:16,564 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,564 - Proj04.valueIteration - INFO - State 3: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,564 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,564 - Proj04.valueIteration - INFO - State 4: Utility = -0.05 Policy = B
+2016-11-06 12:22:16,564 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,564 - Proj04.valueIteration - INFO - State 5: Utility = -0.05 Policy = B
+2016-11-06 12:22:16,565 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,565 - Proj04.valueIteration - INFO - State 6: Utility = -0.05 Policy = B
+2016-11-06 12:22:16,565 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,565 - Proj04.valueIteration - INFO - State 7: Utility = -0.05 Policy = B
+2016-11-06 12:22:16,565 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,565 - Proj04.valueIteration - INFO - State 8: Utility = -0.05 Policy = B
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - State 9: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - State 10: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - delta = 1.0
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - Value Iteration, loop 2
+2016-11-06 12:22:16,566 - Proj04.valueIteration - INFO - State 1: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,567 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,567 - Proj04.valueIteration - INFO - State 2: Utility = 0.67 Policy = S
+2016-11-06 12:22:16,567 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,567 - Proj04.valueIteration - INFO - State 3: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,567 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,567 - Proj04.valueIteration - INFO - State 4: Utility = -0.05450000000000001 Policy = B
+2016-11-06 12:22:16,568 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,568 - Proj04.valueIteration - INFO - State 5: Utility = 0.4 Policy = G
+2016-11-06 12:22:16,568 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,568 - Proj04.valueIteration - INFO - State 6: Utility = -0.05450000000000001 Policy = B
+2016-11-06 12:22:16,568 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,568 - Proj04.valueIteration - INFO - State 7: Utility = -0.059000000000000004 Policy = S
+2016-11-06 12:22:16,569 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,569 - Proj04.valueIteration - INFO - State 8: Utility = 0.58 Policy = S
+2016-11-06 12:22:16,569 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,569 - Proj04.valueIteration - INFO - State 9: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,569 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,569 - Proj04.valueIteration - INFO - State 10: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - delta = 0.7200000000000001
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - Value Iteration, loop 3
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - State 1: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - State 2: Utility = 0.67 Policy = S
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,570 - Proj04.valueIteration - INFO - State 3: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,571 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,571 - Proj04.valueIteration - INFO - State 4: Utility = 0.3154 Policy = G
+2016-11-06 12:22:16,571 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,571 - Proj04.valueIteration - INFO - State 5: Utility = 0.4 Policy = G
+2016-11-06 12:22:16,571 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,571 - Proj04.valueIteration - INFO - State 6: Utility = 0.2380000000000001 Policy = S
+2016-11-06 12:22:16,572 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,572 - Proj04.valueIteration - INFO - State 7: Utility = 0.25150000000000006 Policy = S
+2016-11-06 12:22:16,572 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,572 - Proj04.valueIteration - INFO - State 8: Utility = 0.58 Policy = S
+2016-11-06 12:22:16,572 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,572 - Proj04.valueIteration - INFO - State 9: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - State 10: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - delta = 0.3699
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - Value Iteration, loop 4
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - State 1: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,573 - Proj04.valueIteration - INFO - State 2: Utility = 0.67 Policy = S
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - State 3: Utility = -1.0 Policy = None
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - State 4: Utility = 0.3154 Policy = G
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - State 5: Utility = 0.4 Policy = G
+2016-11-06 12:22:16,574 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,575 - Proj04.valueIteration - INFO - State 6: Utility = 0.2380000000000001 Policy = S
+2016-11-06 12:22:16,575 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,575 - Proj04.valueIteration - INFO - State 7: Utility = 0.25150000000000006 Policy = S
+2016-11-06 12:22:16,575 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,575 - Proj04.valueIteration - INFO - State 8: Utility = 0.58 Policy = S
+2016-11-06 12:22:16,575 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,576 - Proj04.valueIteration - INFO - State 9: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,576 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,576 - Proj04.valueIteration - INFO - State 10: Utility = 1.0 Policy = None
+2016-11-06 12:22:16,576 - Proj04.valueIteration - INFO - delta = 0
+2016-11-06 12:22:16,576 - Proj04.valueIteration - INFO - Break condition met at iteration 4. delta = 0

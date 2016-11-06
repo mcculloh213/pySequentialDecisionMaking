@@ -1,6 +1,6 @@
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Opening file ./data/rand_transitions.txt
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Reading data using CSV module
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Cohersing data into a usable format
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Passed data is non-deterministic
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - Cleaning data
-2016-11-06 10:04:00,486 - Proj04.readFile - INFO - DONE -- Returning dataset
+2016-11-06 12:22:16,561 - Proj04.readFile - INFO - Opening file ./data/rand_transitions.txt
+2016-11-06 12:22:16,561 - Proj04.readFile - INFO - Reading data using CSV module
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - Cohersing data into a usable format
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - Passed data is non-deterministic
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - Cleaning data
+2016-11-06 12:22:16,562 - Proj04.readFile - INFO - DONE -- Returning dataset

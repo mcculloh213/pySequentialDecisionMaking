@@ -34,6 +34,7 @@ def processDescriptions(fpath):
         f.close()                                                              # Close f, dataset obtained
         states = []
         rewards = []
+        terminals = []
         log.logger.info("Cleaning data")
         for i in range(0, len(dataset)):
             try:
@@ -44,12 +45,14 @@ def processDescriptions(fpath):
                 rewards.append(float(dataset[i][3]))                           # Coherse state reward to a float
             except ValueError as e:
                 ee.excepterrors(e, "Could not coherse state rewards {0} to a float".format(dataset[i][3]))
-        log.logger.info("Generating reward dictionary")
+        log.logger.info("Generating reward dictionary and terminal states")
         rwd = {}                                                               # Initialize reward dictionary
         for i in range(0, len(states)):
             rwd[states[i]] = rewards[i]
+            if (rewards[i] == 1) or (rewards[i] == -1):                        # If reward is a terminal state reward
+                terminals.append(states[i])                                        # Append the state to terminal list
         log.logger.info("Done -- Returning state/reward duple")
-        return states, rwd                                                     # Return state description/rewards
+        return states, rwd, terminals                                          # Return state description/rewards
 
     except FileNotFoundError as e:
         ee.excepterrors(e, "msg")

@@ -1,7 +1,7 @@
-2016-11-06 10:04:00,484 - Proj04.preprocess - INFO - Opening file ./data/place_descriptions.txt
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Reading data using CSV module
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Cohersing data into a usable format
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Closing file ./data/place_descriptions.txt
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Cleaning data
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Generating reward dictionary
-2016-11-06 10:04:00,485 - Proj04.preprocess - INFO - Done -- Returning state/reward duple
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Opening file ./data/place_descriptions.txt
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Reading data using CSV module
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Cohersing data into a usable format
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Closing file ./data/place_descriptions.txt
+2016-11-06 12:22:16,560 - Proj04.preprocess - INFO - Cleaning data
+2016-11-06 12:22:16,561 - Proj04.preprocess - INFO - Generating reward dictionary and terminal states
+2016-11-06 12:22:16,561 - Proj04.preprocess - INFO - Done -- Returning state/reward duple

@@ -6,11 +6,22 @@ log = lg.Logger("Proj04.valueIteration", "value-Iteration", '%(asctime)s - %(nam
 
 
 def value_iteration(det, mdp, error):
+    """
+    Value Iteration algorithm using Bellman's equation.
+    :param det: Boolean value -- true if data is deterministic, false otherwise
+    :type det: bool
+    :param mdp: Markov Decision Process class
+    :type mdp: lib.mdp.MarkovDecisionProcess
+    :param error: Percent error tolerance
+    :type error: float
+    :return:
+    """
     utilp = dict([(s, 0) for s in mdp.states])                                                # U' = {S1: 0, ..., Sn: 0}
     util = dict([(s, 0) for s in mdp.states])                                                 # U  = {S1: 0, ..., Sn: 0}
     gamma = mdp.gamma                                                                         # Get MDP discount
     log.logger.info("Running value iteration")
     i = 1                                                                                     # Increment
+    policy = {}
     while True:                                                                               # Loop ------------------
         log.logger.info("Value Iteration, loop {0}".format(i))
         util = utilp.copy()                                                                   # U = U'
@@ -33,12 +44,21 @@ def value_iteration(det, mdp, error):
                     else:                                                                         # Terminal state
                         for duple in trmodel:
                             bellmansum.append((duple[0] * util[duple[1]]))
-            utilp[s] = rwd + (gamma * max(bellmansum))
-            log.logger.info("State {0}: Utility = {1}".format(s, utilp[s]))
+            index = bellmansum.index(max(bellmansum))                                         # Get index of max util
+            if not det:                                                                       # Normalize index
+                if index in range(0, 3):
+                    index = 0
+                elif index in range(3, 6):
+                    index = 1
+                else:
+                    index = 2
+            policy[s] = actions[index]                                                        # Update policy
+            utilp[s] = rwd + (gamma * max(bellmansum))                                        # Update U'
+            log.logger.info("State {0}: Utility = {1} Policy = {2}".format(s, utilp[s], policy[s]))
             delta = max(delta, abs(utilp[s] - util[s]))                                       # Recalculate delta
             log.logger.info("delta = {0}".format(delta))
-        i += 1                                                                                # Increment
         if delta < error * (1 - gamma) / gamma:                                               # Break condition -------
             log.logger.info("Break condition met at iteration {0}. delta = {1}".format(i, delta))
             break
-    return util
+        i += 1                                                                                # Increment
+    return util, policy
