@@ -45,5 +45,39 @@ def readFile(fpath):
         return det, dataset                                                         # Return dataset
     except FileNotFoundError as e:                         # EXCEPTION:
         ee.excepterrors(e, "No such file: {0}".format(fpath))                       # param:fpath does not exist
+    except ValueError as e:                                # EXCEPTION:
+        ee.excepterrors(e, "Could not coherse data correctly")                      # Could not correctly coherse data
     except AssertionError as e:                            # EXCEPTION:
         ee.excepterrors(e, "Improper data {0} passed.".format(fpath))               # param:fpath cannot be used
+
+
+def deterministic_transitions(dataset):
+    nonterminals = []                                                               # Instantiate non-terminal nodes
+    for i in range(0, len(dataset)):                                                # Gather non-terminal nodes
+        if dataset[i][0] not in nonterminals:
+            nonterminals.append(dataset[i][0])
+    trx = {}
+    for i in nonterminals:
+        action = {}
+        for j in range(0, len(dataset)):
+            if dataset[j][0] == i:
+                action[dataset[j][1]] = (dataset[j][3], dataset[j][2])
+        trx[i] = action
+    return trx
+
+
+def nondeterministic_transitions(dataset):
+    nonterminals = []
+    for i in range(0, len(dataset)):
+        if dataset[i][0] not in nonterminals:
+            nonterminals.append(dataset[i][0])
+    trx = {}
+    for i in nonterminals:
+        action = {}
+        for j in range(0, len(dataset)):
+            if dataset[j][0] == i:
+                action[dataset[j][1]] = [(dataset[j][3], dataset[j][2]),
+                                         (dataset[j][5], dataset[j][4]),
+                                         (dataset[j][7], dataset[j][6])]
+        trx[i] = action
+    return trx

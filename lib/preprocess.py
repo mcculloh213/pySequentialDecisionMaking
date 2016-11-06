@@ -44,8 +44,12 @@ def processDescriptions(fpath):
                 rewards.append(float(dataset[i][3]))                           # Coherse state reward to a float
             except ValueError as e:
                 ee.excepterrors(e, "Could not coherse state rewards {0} to a float".format(dataset[i][3]))
+        log.logger.info("Generating reward dictionary")
+        rwd = {}                                                               # Initialize reward dictionary
+        for i in range(0, len(states)):
+            rwd[states[i]] = rewards[i]
         log.logger.info("Done -- Returning state/reward duple")
-        return states, rewards                                                 # Return state description/rewards
+        return states, rwd                                                     # Return state description/rewards
 
     except FileNotFoundError as e:
         ee.excepterrors(e, "msg")
