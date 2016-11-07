@@ -1,3 +1,4 @@
+import copy
 import lib.logger as lg
 
 __author__ = "H.D. 'Chip' McCullough IV"
@@ -24,7 +25,7 @@ def value_iteration(det, mdp, error):
     policy = {}
     while True:                                                                               # Loop ------------------
         log.logger.info("Value Iteration, loop {0}".format(i))
-        util = utilp.copy()                                                                   # U = U'
+        util = copy.deepcopy(utilp)                                                           # U = U'
         delta = 0                                                                             # Set initial delta
         for s in mdp.states:                                                                  # Bellman Equation
             rwd = mdp.rewards.get(s)                                                          # Reward of current state
@@ -33,24 +34,15 @@ def value_iteration(det, mdp, error):
             for a in actions:
                 trmodel = mdp.transition(s, a)                                                # Transition model
                 summation = 0                                                                 # summation (P1U1 + ...)
-                if det:                                                                       # Deterministic model
-                    for duple in trmodel:
-                        bellmansum.append((duple[0] * util[duple[1]]))
-                else:                                                                         # Non-Deterministic model
-                    if len(trmodel) > 1:                                                          # Non-terminal state
-                        for act in trmodel:
-                            for duple in act:
-                                bellmansum.append((duple[0] * util[duple[1]]))
-                    else:                                                                         # Terminal state
-                        for duple in trmodel:
-                            bellmansum.append((duple[0] * util[duple[1]]))
+                for duple in trmodel:
+                    bellmansum.append((duple[0] * util[duple[1]]))
             index = bellmansum.index(max(bellmansum))                                         # Get index of max util
             if not det:                                                                       # Normalize index
-                if index in range(0, 3):
+                if index in range(0, 3):                                                      # i in 0,1,2
                     index = 0
-                elif index in range(3, 6):
+                elif index in range(3, 6):                                                    # i in 3,4,5
                     index = 1
-                else:
+                else:                                                                         # i in 6,7,8
                     index = 2
             policy[s] = actions[index]                                                        # Update policy
             utilp[s] = rwd + (gamma * max(bellmansum))                                        # Update U'

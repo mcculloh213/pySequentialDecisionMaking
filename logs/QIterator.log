@@ -1,0 +1,1877 @@
+2016-11-06 18:54:31,400 - Proj04 - INFO - State Description file: ./data/place_descriptions.txt
+2016-11-06 18:54:31,400 - Proj04 - INFO - Transition file: ./data/rand_transitions.txt
+2016-11-06 18:54:31,400 - Proj04 - INFO - Processing state descriptions
+2016-11-06 18:54:31,400 - Proj04.preprocess - INFO - Opening file ./data/place_descriptions.txt
+2016-11-06 18:54:31,401 - Proj04.preprocess - INFO - Reading data using CSV module
+2016-11-06 18:54:31,401 - Proj04.preprocess - INFO - Cohersing data into a usable format
+2016-11-06 18:54:31,401 - Proj04.preprocess - INFO - Closing file ./data/place_descriptions.txt
+2016-11-06 18:54:31,401 - Proj04.preprocess - INFO - Cleaning data
+2016-11-06 18:54:31,401 - Proj04.preprocess - INFO - Generating reward dictionary and terminal states
+2016-11-06 18:54:31,402 - Proj04.preprocess - INFO - Done -- Returning state/reward duple
+2016-11-06 18:54:31,402 - Proj04 - INFO - Processing transitions
+2016-11-06 18:54:31,402 - Proj04.readFile - INFO - Opening file ./data/rand_transitions.txt
+2016-11-06 18:54:31,402 - Proj04.readFile - INFO - Reading data using CSV module
+2016-11-06 18:54:31,402 - Proj04.readFile - INFO - Cohersing data into a usable format
+2016-11-06 18:54:31,402 - Proj04.readFile - INFO - Passed data is non-deterministic
+2016-11-06 18:54:31,402 - Proj04.readFile - INFO - Cleaning data
+2016-11-06 18:54:31,403 - Proj04.readFile - INFO - DONE -- Returning dataset
+2016-11-06 18:54:31,403 - Proj04 - INFO - Generating actions
+2016-11-06 18:54:31,403 - Proj04 - INFO - Transition data is non-deterministic
+2016-11-06 18:54:31,403 - Proj04 - INFO - Generating transition dictionary, non-deterministic format
+2016-11-06 18:54:31,403 - Proj04.qIteration - INFO - Running Q Iteration
+2016-11-06 18:54:31,403 - Proj04.qIteration - INFO - Q Iteration, loop 1
+2016-11-06 18:54:31,404 - Proj04.qIteration - INFO -     S=1
+2016-11-06 18:54:31,404 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,404 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,404 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,404 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,404 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,405 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=1.0
+2016-11-06 18:54:31,405 - Proj04.qIteration - INFO -     S=2
+2016-11-06 18:54:31,405 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,405 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,405 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,405 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,406 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,407 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,408 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,409 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,409 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,409 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,409 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,409 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,409 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,410 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,411 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO -     S=3
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,412 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=1.0
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -     S=4
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,413 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,414 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,415 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,415 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,415 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,415 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,415 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,415 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,416 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,417 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,418 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,419 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,420 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,420 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,420 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,420 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,420 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,420 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,421 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -     S=5
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,422 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,423 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,424 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,425 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,426 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,427 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -     S=6
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,428 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,429 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,430 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,431 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,432 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,433 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,434 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,435 - Proj04.qIteration - INFO -     S=7
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,436 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,437 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,438 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,439 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,440 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,441 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,442 - Proj04.qIteration - INFO -     S=8
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,443 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,444 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,445 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,446 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,447 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,448 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=0.05
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -     S=9
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,449 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=1.0
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -     S=10
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,450 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO -             Q(s',a')=0
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO - delta=1.0, Q'(s,a) - Q(s,a)=1.0
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO - Q Iteration, loop 2
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO -     S=1
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,451 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -     S=2
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,452 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,453 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.9
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,454 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,455 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.9
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,456 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.9
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -     S=3
+2016-11-06 18:54:31,457 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -     S=4
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,458 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,459 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,460 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.045
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,461 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,462 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.045
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,463 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,464 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,465 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.04500000000000001
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -     S=5
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,466 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,467 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.2385
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,468 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.9
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,469 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,470 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.9
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -     S=6
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,471 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,472 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.6435
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,473 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,474 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.045
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,475 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,476 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.045000000000000026
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -     S=7
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,477 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,478 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.38700000000000007
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,479 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,480 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.045
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,481 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,482 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.045
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -     S=8
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,483 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,484 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.2385
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,485 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,486 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.9
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,487 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,488 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -             Q(s',a')=-0.05
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.8999999999999999
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -     S=9
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,489 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -     S=10
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,490 - Proj04.qIteration - INFO - delta=0.9, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO - Q Iteration, loop 3
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -     S=1
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,491 - Proj04.qIteration - INFO -     S=2
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,492 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,493 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,494 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,495 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -     S=3
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,496 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO -     S=4
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,497 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             Q(s',a')=-0.6935
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000003
+2016-11-06 18:54:31,498 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,499 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,500 - Proj04.qIteration - INFO - delta=0.38475000000000004, Q'(s,a) - Q(s,a)=0.38475000000000004
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,501 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             Q(s',a')=-0.6935
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,502 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000003
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO - delta=0.8099999999999999, Q'(s,a) - Q(s,a)=0.8099999999999999
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,503 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             Q(s',a')=-0.6935
+2016-11-06 18:54:31,504 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000003
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.81
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -     S=5
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,505 - Proj04.qIteration - INFO -             Q(s',a')=-0.6935
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000003
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,506 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.028349999999999986
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             Q(s',a')=-0.6935
+2016-11-06 18:54:31,507 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000003
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,508 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             Q(s',a')=-0.6935
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000003
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -     S=6
+2016-11-06 18:54:31,509 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,510 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000001
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.07289999999999996
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,511 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000001
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,512 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.8099999999999999
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             Q(s',a')=0.1885
+2016-11-06 18:54:31,513 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000001
+2016-11-06 18:54:31,514 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.81
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -     S=7
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,515 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000001
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,516 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.23085000000000006
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,517 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000001
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,518 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.8099999999999999
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,519 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             Q(s',a')=-0.09500000000000001
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.8099999999999999
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -     S=8
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,520 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             Q(s',a')=-0.43700000000000006
+2016-11-06 18:54:31,521 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.567
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,522 - Proj04.qIteration - INFO -             Q(s',a')=-0.43700000000000006
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,523 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,524 - Proj04.qIteration - INFO -             Q(s',a')=-0.43700000000000006
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             Q(s',a')=-0.095
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,525 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -     S=9
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -     S=10
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,526 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO - delta=0.81, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO - Q Iteration, loop 4
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -     S=1
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,527 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -     S=2
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,528 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,529 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,530 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,531 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -     S=3
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -     S=4
+2016-11-06 18:54:31,532 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             Q(s',a')=-0.6206
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,533 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO - delta=0.36449999999999994, Q'(s,a) - Q(s,a)=0.36449999999999994
+2016-11-06 18:54:31,534 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,535 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             Q(s',a')=-0.6206
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO - delta=0.36449999999999994, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,536 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,537 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             Q(s',a')=-0.6206
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO - delta=0.36449999999999994, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,538 - Proj04.qIteration - INFO -     S=5
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             Q(s',a')=-0.6206
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,539 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.5102999999999999
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,540 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             Q(s',a')=-0.6206
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,541 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             Q(s',a')=-0.6206
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,542 - Proj04.qIteration - INFO -     S=6
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             Q(s',a')=0.28975000000000006
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,543 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             Q(s',a')=0.16015000000000001
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.1458000000000001
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,544 - Proj04.qIteration - INFO -             Q(s',a')=0.28975000000000006
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             Q(s',a')=0.16015000000000001
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,545 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             Q(s',a')=0.16015000000000001
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,546 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             Q(s',a')=0.28975000000000006
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,547 - Proj04.qIteration - INFO -     S=7
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             Q(s',a')=0.28975000000000006
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,548 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.2187
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,549 - Proj04.qIteration - INFO -             Q(s',a')=0.28975000000000006
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,550 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,551 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             Q(s',a')=0.28975000000000006
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,552 - Proj04.qIteration - INFO -     S=8
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,553 - Proj04.qIteration - INFO -             Q(s',a')=-0.20615
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,554 - Proj04.qIteration - INFO -             Q(s',a')=-0.20615
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,555 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             Q(s',a')=-0.20615
+2016-11-06 18:54:31,556 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,557 - Proj04.qIteration - INFO -     S=9
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -     S=10
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,558 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO - delta=0.5102999999999999, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO - Q Iteration, loop 5
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -     S=1
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,559 - Proj04.qIteration - INFO -     S=2
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,560 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,561 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,562 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,563 - Proj04.qIteration - INFO -     S=3
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -       Reward=-1.0
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -     S=4
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,564 - Proj04.qIteration - INFO -             Q(s',a')=-0.47479999999999994
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,565 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,566 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,567 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             Q(s',a')=-0.47479999999999994
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,568 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             S'=8
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             Q(s',a')=0.7555
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             Q(s',a')=0.8499999999999999
+2016-11-06 18:54:31,569 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             Q(s',a')=-0.47479999999999994
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -     S=5
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,570 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             Q(s',a')=-0.47479999999999994
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,571 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             Q(s',a')=-0.47479999999999994
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,572 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             S'=6
+2016-11-06 18:54:31,573 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             Q(s',a')=-0.47479999999999994
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -     S=6
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,574 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             Q(s',a')=0.65425
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             Q(s',a')=0.6704499999999999
+2016-11-06 18:54:31,575 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             Q(s',a')=0.65425
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,576 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             Q(s',a')=0.6704499999999999
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,577 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             S'=5
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             Q(s',a')=0.6704499999999999
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             Q(s',a')=0.65425
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,578 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             S'=3
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -     S=7
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,579 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             Q(s',a')=0.65425
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,580 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             Q(s',a')=0.65425
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,581 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,582 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             S'=4
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             Q(s',a')=0.65425
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,583 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             Q(s',a')=0.7150000000000001
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             S'=1
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             Q(s',a')=-1.0
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -     S=8
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -       Reward=-0.05
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -         Action in focus: B
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,584 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             Q(s',a')=0.012550000000000006
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,585 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -         Action in focus: G
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             Q(s',a')=0.012550000000000006
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,586 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,587 - Proj04.qIteration - INFO -         Action in focus: S
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             S'=7
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             Q(s',a')=0.012550000000000006
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             Q(s',a')=0.715
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             S'=2
+2016-11-06 18:54:31,588 - Proj04.qIteration - INFO -             A'=B
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             A'=G
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             A'=S
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             Q(s',a')=0.85
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -     S=9
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             S'=9
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,589 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO -     S=10
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO -       Reward=1.0
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO -         Action in focus: None
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO -             S'=10
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO -             A'=None
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO -             Q(s',a')=1.0
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO - delta=0, Q'(s,a) - Q(s,a)=0.0
+2016-11-06 18:54:31,590 - Proj04.qIteration - INFO - Break condition met at iteration 5. delta = 0

@@ -39,6 +39,10 @@ class MarkovDecisionProcess:
         return self.__states
 
     @property
+    def terminal(self):
+        return self.__terminal
+
+    @property
     def rewards(self):
         return self.__rewards
 
@@ -75,8 +79,9 @@ class MarkovDecisionProcess:
         if action is None:                                                     # Terminal state
             plan.append((0.0, state))                                              # Return cstate
         else:                                                                  # Non-terminal state
-            for a in self.__actions:                                               # Evaluate transitons
-                plan.append(self.__eval(state, a))                                 # Append (probability, nstate)
+            plan.append(self.__eval(state, action))                                # Append (probability, nstate)
+            if not isinstance(plan[0], tuple):
+                plan = plan[0]
         return plan
 
     def reward(self, state):
